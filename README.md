@@ -4,6 +4,8 @@ Team EXECODE - Main Repo
 ________________________________
 1st Project
 
+Under te-main/ create an index.html file.
+
 Exercise: 
 
 1. On a white background, add 4 squares (350x350 pixels) that are centered and tiled as shown in the image sent to via via chat.
