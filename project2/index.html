@@ -10,7 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Smythe&family=Tienne:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/2e3013f2f0.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/2e3013f2f0.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="assets/styles.css" />
     <title>Project 2 - Web Layout</title>
   </head>
@@ -19,78 +22,92 @@
       <section id="sale-header">Free Shopping in the UK</section>
 
       <nav>
-        <ul>
+        <ul class="nav-list">
           <li>About</li>
           <li>FAQs</li>
           <li>Buy Refills</li>
           <li>Refer A Friend</li>
         </ul>
-        <p id="logo">Wild</p>
+        <div class="mobile-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <p id="logo">          
+          Wild</p>
         <div id="right-side-nav">
           <h4 id="login">Login</h4>
-          <button id="shop-now">Shop Now</button>
+          <button id="shop-now" class="nav-button">Shop Now</button>
         </div>
       </nav>
       <main>
         <div id="left-main">
-        <h1 id="tagline">Deodorant Redefined</h1>
-        <p id="desc">Our new deodorant case in partnership with 
-            CoppaFeel + our mouth-wateringly delicious 
-            Chocolate Fondue scent are now available! 
-        </p>
-        <button id="shop-now">Shop Now</button>
-        <img id="rating-img" src="images/fiverating.png">
-    </div>
-    <div id="right-main">
-        <img id="right-main-img" src="images/wildimage2-transparent.png">
-    </div>
+          <h1 id="tagline">Deodorant Redefined</h1>
+          <p id="desc">
+            Our new deodorant case in partnership with CoppaFeel + our
+            mouth-wateringly delicious Chocolate Fondue scent are now available!
+          </p>
+          <button id="shop-now">Shop Now</button>
+          <img id="rating-img" src="images/fiverating.png" />
+        </div>
+        <div id="right-main">
+          <img id="right-main-img" src="images/wildimage2-transparent.png" />
+        </div>
       </main>
     </header>
-    
-  <body>
+
     <div class="main">
       <div class="main-content">
-        <h2 class="main-content-title">Widly effective and sustainable.</h2>
+        <h2 class="main-content-title">Wildy effective and sustainable.</h2>
         <div class="box-container">
           <div class="box">
             <img class="box-img" src="images/effective.png" />
             <h3 class="box-title">Effective</h3>
-            <p class="box-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="box-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
           </div>
           <div class="box">
             <img class="box-img" src="images/sustainable.png" />
             <h3 class="box-title">Sustainable</h3>
-            <p class="box-content">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <p class="box-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>
           </div>
           <div class="box">
             <img class="box-img" src="images/convenient.png" />
             <h3 class="box-title">Convenient</h3>
-            <p class="box-content">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <p class="box-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>
           </div>
           <div class="box">
             <img class="box-img" src="images/no_nasties.png" />
             <h3 class="box-title">No Nasties</h3>
-            <p class="box-content">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <p class="box-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>
           </div>
         </div>
       </div>
 
+
       <div class="body-box">
+
         <div class="body-img">
           <img src="images/wildimage.jpeg" class="wildimage" />
         </div>
+
         <div class="body-container">
           <h2 class="main-body-title">How it works.</h2>
-          <ul>
+         
             <li>
               <div class="body-item">
                 <img src="images/leaf.png" class="leaf-img" />
                 <h4 class="body-title">Select your case</h4>
               </div>
               <p class="body-content">
-                Our Wild case is made to be used again and again. We've taken our time to create a 
-                unique and timeless design, all you have do is
-                pick your color.
+                Our Wild case is made to be used again and again. We've taken
+                our time to create a unique and timeless design, all you have do
+                is pick your color.
               </p>
             </li>
             <li>
@@ -99,8 +116,9 @@
                 <h4 class="body-title">Frequent refills</h4>
               </div>
               <p class="body-content">
-               Choose your favorite Wild fragrance and we'll take care of the rest. We will
-               ship your refills out to you exactly as and when you want.
+                Choose your favorite Wild fragrance and we'll take care of the
+                rest. We will ship your refills out to you exactly as and when
+                you want.
               </p>
             </li>
             <li>
@@ -109,8 +127,8 @@
                 <h4 class="body-title">Flexi dates</h4>
               </div>
               <p class="body-content">
-               Want to switch up your fragrance, change your delivery dates, or cancel your subscription?
-               Don't sweat it, we're flexible.
+                Want to switch up your fragrance, change your delivery dates, or
+                cancel your subscription? Don't sweat it, we're flexible.
               </p>
             </li>
           </ul>
@@ -120,66 +138,77 @@
       <div class="grapevine-box">
         <h1 class="grapevine-title">On the grapevine.</h1>
         <div class="grapevine-container">
-            <div class="trustpilot">
-              <h4 class="excellent">Excellent</h4>
-              <img src="images/greenstars.png" class="green-stars">
-              <p class="excellent-review">Trusted by 5,430 reviews</p>
-              <img src="images/Trustpilot-Logo.jpeg" class="trustpilot-logo">
-            </div>
+          <div class="trustpilot">
+            <h4 class="excellent">Excellent</h4>
+            <img src="images/greenstars.png" class="green-stars" />
+            <p class="excellent-review">Trusted by 5,430 reviews</p>
+            <img src="images/Trustpilot-Logo.jpeg" class="trustpilot-logo" />
+          </div>
 
-                <div class="arrow">
-                  <i class="fa-sharp fa-solid fa-arrow-left"></i>
-                </div>
+          <div class="arrow">
+            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+          </div>
 
-                <div class="boxes-container">
-             <div class="grapevine-boxes">
-              <img src="images/greenstars.png" class="green-stars-review">
-              <p class="review-posted"> 1 hour ago</p>
-                <div class="review-info">
-                  <h4 class="review-title">Great quality product</h4>
-                  <p class="review-bio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam voluptatibus nostrum quibusdam repellendus tenetur veritatis sed ! </p>
-                </div>
-             </div>
-             <div class="grapevine-boxes">
-              <img src="images/greenstars.png" class="green-stars-review">
-              <p class="review-posted"> 20 hour ago</p>
+          <div class="boxes-container">
+            <div class="grapevine-boxes">
+              <img src="images/greenstars.png" class="green-stars-review" />
+              <p class="review-posted">1 hour ago</p>
               <div class="review-info">
                 <h4 class="review-title">Great quality product</h4>
-                <p class="review-bio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam voluptatibus nostrum quibusdam repellendus tenetur veritatis sed ! </p>
+                <p class="review-bio">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
+                  voluptatibus nostrum quibusdam repellendus tenetur veritatis
+                  sed !
+                </p>
               </div>
-             </div>
-             <div class="grapevine-boxes">
-              <img src="images/greenstars.png" class="green-stars-review">
-              <p class="review-posted"> 3 days ago</p>
+            </div>
+            <div class="grapevine-boxes">
+              <img src="images/greenstars.png" class="green-stars-review" />
+              <p class="review-posted">20 hour ago</p>
               <div class="review-info">
                 <h4 class="review-title">Great quality product</h4>
-                <p class="review-bio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam voluptatibus nostrum quibusdam repellendus tenetur veritatis sed ! </p>
-              </div>
+                <p class="review-bio">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
+                  voluptatibus nostrum quibusdam repellendus tenetur veritatis
+                  sed !
+                </p>
               </div>
             </div>
-            <div class="arrow">
-              <i class="fa-sharp fa-solid fa-arrow-right"></i>
+            <div class="grapevine-boxes">
+              <img src="images/greenstars.png" class="green-stars-review" />
+              <p class="review-posted">3 days ago</p>
+              <div class="review-info">
+                <h4 class="review-title">Great quality product</h4>
+                <p class="review-bio">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
+                  voluptatibus nostrum quibusdam repellendus tenetur veritatis
+                  sed !
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        
-     
-        
-        <div class="shopnow-container">
-          <div class="shopnow-box">
-            <div class="shopnow-info">
-              <h1 class="shopnow-title">Arms up, waste down</h1>
-              <p class="shopnow-paragraph">Made from anodised aluminum and recycled plastic, this clever little
-                device is designed to last. And did we mention our Wild refills are 100%
-                plastic free and slim enough to fit through your letterbox? Now that's 
-                worth raisng your arms for.
-              </p>
-              <button class="shopnow-button">Shop Now</button>
-            </div>
+          <div class="arrow">
+            <i class="fa-sharp fa-solid fa-arrow-right"></i>
           </div>
-          <img src="images/wild-cover-image.jpeg">            
         </div>
       </div>
-  </body>
+
+      <div class="shopnow-container">
+        <div class="shopnow-box">
+          <div class="shopnow-info">
+            <h1 class="shopnow-title">Arms up, waste down</h1>
+            <p class="shopnow-paragraph">
+              Made from anodised aluminum and recycled plastic, this clever
+              little device is designed to last. And did we mention our Wild
+              refills are 100% plastic free and slim enough to fit through your
+              letterbox? Now that's worth raisng your arms for.
+            </p>
+            <button class="shopnow-button">Shop Now</button>
+          </div>
+        </div>
+        <img class="wild-cover-bottom-img" src="images/wild-cover-image.jpeg" />
+      </div>
+    </div>
+    <footer>Start Date Time: May 7th 2023 5pm</footer>
   </body>
 </html>
