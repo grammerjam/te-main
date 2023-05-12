@@ -227,9 +227,271 @@ main {
 }
 #rating-img {
   display: block;
-  width: 230px;
+  width: 210px;
   height: 55px;
   
   margin-left: 15%;
    padding-top: 50px;
+}
+
+.main-content {
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.box {
+  display: inline-block;
+  width: 200px;
+  margin-right: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.main-content-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.box-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.box-content {
+  font-size: 16px;
+  text-align: center;
+}
+
+.box-img {
+  width: 100px;
+  height: auto;
+}
+
+/* How it works */
+
+.body-box {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-img {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+  justify-self: end;
+}
+
+.wildimage {
+  width: 650px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.body-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.body-item img {
+  margin-right: 10px;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  
+}
+
+.main-body-title {
+  padding-bottom: 20px;
+  position: relative;
+
+  font-size: 36px;
+}
+
+.leaf-img {
+  width: 30px;
+  height: auto;
+}
+
+.body-content {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/* On the grapevine */
+
+.grapevine-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grapevine-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  width: 80%;
+}
+
+.grapevine-title {
+  margin-top: 30px;
+  font-size: 36px;
+}
+
+.trustpilot-logo {
+  width: 200px;
+}
+
+img .green-stars{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.green-stars {
+  max-width: 200px;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+.trustpilot {
+ text-align: center;
+}
+
+.excellent {
+  margin-top: 0;
+  margin-top: 30px;
+}
+
+.excellent-review {
+  margin-bottom: 0;
+}
+
+.trustpilot-logo {
+  width: 150px;
+  height: auto;
+}
+
+.arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+}
+
+
+.boxes-container{
+  display: flex;
+  align-items: center;
+  
+  
+}
+
+
+.green-stars-review{
+  max-width: 100px;
+  max-height: 100%;
+  margin: 0 auto 10px;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  margin-left: 30px;
+}
+
+img .green-stars-review{
+  
+}
+
+.review-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.review-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.review-posted {
+  margin: 0;
+  font-size: 14px;
+  color: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+  font-style: oblique;
+}
+
+.review-bio {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+
+
+
+
+/* Arms up, waste down */
+
+.shopnow-container {
+  display: flex;  
+  min-width: 200px;
+  max-width: 100%;
+}
+
+.shopnow-container img{
+  height: auto;
+  width: 700px;
+  display: flex;
+}
+
+.shopnow-info{
+ 
+
+}
+
+img{
+  
+}
+
+
+.shopnow-button {
+  padding: 10px 20px;
+  background-color: #F8AE3B;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.shopnow-title{
+  font-size: 36px;
 }
