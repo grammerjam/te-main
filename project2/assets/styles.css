@@ -92,6 +92,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -141,7 +142,6 @@ table {
 header {
   display: flex;
   flex-direction: column;
-
   height: 750px;
   font-family: Futura PT, Trebuchet MS, Arial, system-ui;
   
@@ -163,6 +163,11 @@ ul {
 li {
   padding-left: 1.25rem;
 }
+
+.mobile-menu {
+  display: none;
+}
+
 #logo {
   font-weight: bold;
   font-family: "Tienne", serif;
@@ -194,7 +199,7 @@ main {
   display: flex;
   flex-direction: row;
   gap: 50px;
-  padding-left: 5%;
+ 
   
   width: 100%;
   background-color: #ff8c70;
@@ -259,6 +264,7 @@ main {
 .main-content-title {
   font-size: 36px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .box-title {
@@ -278,25 +284,34 @@ main {
 
 /* How it works */
 
-.body-box {
+
+
+ .body-box {
   display: flex;
-  padding: 20px;
-  align-items: center;
-  justify-content: center;
+  max-height: 80vh;
+  max-width: 80vw;
+  margin: 20px auto;
+  
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 .body-img {
-  display: inline-block;
-  width: 45%;
-  vertical-align: top;
-  justify-self: end;
+  /* display: inline-block; */
+  /* width: 45%; */
+  /* vertical-align: top; */
+  /* justify-self: end; */
+  width: 50%;
 }
 
+
 .wildimage {
-  width: 650px;
+  width: 100%;
   height: auto;
-  margin-right: 20px;
-}
+  /* margin-right: 20px; */
+} 
+
+
 
 .body-item {
   display: flex;
@@ -309,17 +324,24 @@ main {
 }
 
 .body-container {
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 100px;
-  
+}
+
+.body-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
 }
 
 .main-body-title {
   padding-bottom: 20px;
   position: relative;
-
+  font-weight: bold;
   font-size: 36px;
 }
 
@@ -332,8 +354,14 @@ main {
   margin-top: 0;
 }
 
-ul {
+li {
   list-style: none;
+} 
+
+
+.wild-cover-bottom-img {
+ width: 150px;
+ padding-right: 50px;
 }
 
 /* On the grapevine */
@@ -343,6 +371,7 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 7px
 }
 
 .grapevine-container {
@@ -355,6 +384,7 @@ ul {
 .grapevine-title {
   margin-top: 30px;
   font-size: 36px;
+  font-weight: bold;
 }
 
 .trustpilot-logo {
@@ -402,15 +432,13 @@ img .green-stars{
 .boxes-container{
   display: flex;
   align-items: center;
-  
-  
 }
 
 
 .green-stars-review{
   max-width: 100px;
   max-height: 100%;
-  margin: 0 auto 10px;
+  margin: 20px auto 0;
   align-items: center;
   display: flex;
   position: absolute;
@@ -437,7 +465,7 @@ img .green-stars-review{
 }
 
 .review-posted {
-  margin: 0;
+  margin: 10px;
   font-size: 14px;
   color: #999;
   display: flex;
@@ -472,17 +500,27 @@ img .green-stars-review{
 }
 
 .shopnow-info{
+ padding-left: 3rem;
  
+ width: 60%;
+ line-height: 1.6;
 
 }
 
-img{
+
+.shopnow-box {
+  margin: auto 0;
+  font-family: Gelica, Georgia, system-ui;
+  padding: 75px;
   
 }
 
 
+
+
 .shopnow-button {
   padding: 10px 20px;
+  margin-top: 20px;
   background-color: #F8AE3B;
   border: none;
   color: white;
@@ -494,4 +532,35 @@ img{
 
 .shopnow-title{
   font-size: 36px;
+  font-weight: bold;
+}
+
+
+
+
+@media (max-width: 800px) {
+#right-main-img {
+  display: none;
+}
+.nav-list {
+display:none;
+}
+
+.nav-button {
+  display:none;
+}
+
+
+.mobile-menu {
+  display: inline-block;
+  padding-right: 20px;
+  padding-top: 20px
+  
+}
+.tagline {
+  
+}
+}
+footer {
+  text-align: center;
 }
