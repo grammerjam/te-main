@@ -3,60 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" type="text/css" href="..\dist\output.css" />
-<title>Project 3 -  Team Name</title>
-
-  <style>
-
-  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+   <title>Project 3 -  Team Name</title>
+   <style>
+    .my-custom-text {
+      font-family: 'Noto Sans', sans-serif;
+    }
+   </style>
 </head>
-<body>
-  <header></header>
-  <main class="flex">
-    dvfsdfsf
-    <section class="flex-grow-0 bg-cover h-screen md:h-96 w-11" 
-    style="background-image: url('images/bg-main-desktop.png');">
-      <!-- Section content -->
-    </section>
-    
-  <section class="flex-grow">
 
+<body class="my-custom-text">
+
+  <section class="flex justify-center items-center h-screen">
+    <form class="container ml-96 w-max p-5 m-8">
+      <div class="flex flex-col">
+        <label class="text-sm ">CARDHOLDER NAME</label>
+       <input placeholder="e.g. Johnny Appleseed" type="text" id="input" class="border border-gray-300 rounded-md px-10 py-2 w-auto"> 
+      </div>
+      <div class="flex flex-col">
+        <label>CARD NUMBER</label>
+       <input placeholder="e.g. 1234 5678 9123 0000" class="border border-gray-300 rounded-md px-10 py-2 w-auto">
+      </div>
+      <div class="flex flex-col">
+        <label>EXP. DATE (MM/YY)</label>
+       <input placeholder="MM" type="number" class="border border-gray-300 rounded-md px-10 py-2 w-auto">
+       <input placeholder="YY" type="number" class="border border-gray-300 rounded-md px-10 py-2 w-auto">
+       <label>CVC</label>
+       <input placeholder="e.g. 123" type="text" class="border border-gray-300 rounded-md px-10 py-2 w-auto">
+      </div>
+      
+      <div class="flex justify-center">
+        <button type="button" class="">Confirm</button>
+      </div>
+    </form>
   </section>
 
+ 
 
-  </main>
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+  <!-- Submit  -->
 
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
-
-  Thank you!
+  <!-- Thank you!
   We've added your card details
-  Continue
+  Continue -->
   
 </body>
 </html>

@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./Project3/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        custom: ['Noto Sans', 'sans-serf']
+      }
+    },
   },
   plugins: [],
 }
