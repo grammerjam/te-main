@@ -7,13 +7,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
   <script src="script.js"></script>
+  <title>Project 3 -  Execode</title>
   <script src="https://cdn.tailwindcss.com"></script>
-   <title>Project 3 -  Team Name</title>
-   <style>
-    .my-custom-text {
-      font-family: 'Noto Sans', sans-serif;
-    }
-   </style>
+  <script>
+    tailwind.config = {
+  content: ["./Project3/*.{html,js}"],
+  theme: {
+    extend: {
+      colors: {
+              "light-gray": "hsl(270, 3%, 87%)",
+              "dark-gray": "hsl(279, 6%, 55%)",
+              "dark-violet": "hsl(278, 68%, 11%)",
+            },
+      fontFamily: {
+        custom: ['Noto Sans', 'sans-serf']
+      }
+    },
+  },
+  plugins: [],
+}
+
+
+  </script>
 </head>
 
 <body>
@@ -21,7 +36,11 @@
   <main class="flex">
     <section class="flex-grow-0 bg-cover h-screen md:h-50 w-1/3 relative " 
          style="background-image: url('images/bg-main-desktop.png');">
-  <!-- Section content -->
+  
+  
+  
+  
+         <!-- Section content -->
   <img class="absolute top-[30%] right-[-25%] w-[70%] h-[30%]" 
        src="images/bg-card-front.png"
        alt="Overlay Image">
@@ -32,42 +51,57 @@
 </section>
 
     
-  <section class="flex-grow">
-
-
-
-
-  <section class="flex justify-center items-center h-screen">
-    <form class="container ml-96 w-max p-5 m-8">
-      <div class="flex flex-col">
-        <label class="text-sm ">CARDHOLDER NAME</label>
-       <input placeholder="e.g. Johnny Appleseed" type="text" id="input" class="border border-gray-300 rounded-md px-10 py-2 w-auto"> 
+  
+<section class="flex justify-center items-center font-custom text-sm font-medium tracking-widest">
+    <form class="container ml-96 flex flex-col pt-[7rem] w-auto m-auto">
+      <div class="flex flex-col p-4 ">
+        <label class="p-1">CARDHOLDER NAME</label>
+       <input placeholder="e.g. Johnny Appleseed" type="text" id="name" class="border border-gray-300 rounded-md px-10 py-2 w-96"> 
       </div>
-      <div class="flex flex-col">
-        <label>CARD NUMBER</label>
-       <input placeholder="e.g. 1234 5678 9123 0000" class="border border-gray-300 rounded-md px-10 py-2 w-auto">
+      <div class="flex flex-col p-4">
+        <label class="p-1">CARD NUMBER</label>
+       <input placeholder="e.g. 1234 5678 9123 0000" id="number" class="border border-gray-300 rounded-md px-10 py-2 w-96">
       </div>
-      <div class="flex flex-col">
-        <label>EXP. DATE (MM/YY)</label>
-       <input placeholder="MM" type="number" class="border border-gray-300 rounded-md px-10 py-2 w-auto">
-       <input placeholder="YY" type="number" class="border border-gray-300 rounded-md px-10 py-2 w-auto">
-       <label>CVC</label>
-       <input placeholder="e.g. 123" type="text" class="border border-gray-300 rounded-md px-10 py-2 w-auto">
+      <div class="flex flex-row p-4">
+        <label class="absolute text-[12px]">EXP. DATE (MM/YY)</label>
+        <div class="flex mt-8 ">
+          <input placeholder="MM" type="text" id="month" class="border border-gray-300 rounded-md  py-2 w-16 mr-3 pl-3">
+          <input placeholder="YY" type="text" id="year" class="border border-gray-300 rounded-md  py-2 w-16 mr-3 pl-3">
+        </div>
+        <label class="absolute right-72 text-[12px] mr-20">CVC</label>
+        <div class="mt-8">
+          <input placeholder="e.g. 123" id="CVC" type="text" class="border border-gray-300 rounded-md px-10 py-2 w-44 ml-3">
+        </div>
       </div>
       
-      <div class="flex justify-center">
-        <button type="button" class="">Confirm</button>
+      <div class="flex justify-center items-center py-12">
+        <button type="button" id="button" class="bg-dark-violet text-white mt-8 h-12 w-80 rounded-md tracking-wide">Confirm</button>
       </div>
     </form>
+
+           <!-- Submit  -->
+        
+          
+              <div class="hidden container flex pt-12 justify-center flex-col ml-96 w-auto">
+                <img src="images/icon-complete.svg" alt="complete" class="w-16 self-center h-16 mt-4">
+                <h1 class="text-2xl mt-4 self-center">Thank You!</h1>
+                <p class="mt-4 text-dark-gray self-center">We've added your card details</p>
+                <button class="bg-dark-violet text-white mt-8 h-12 w-80 rounded-md tracking-wide" id="button">Continue</button>
+              </div>
+          
+           
+
+
+       
+
+
   </section>
 
  
 
-  <!-- Submit  -->
+ 
 
-  <!-- Thank you!
-  We've added your card details
-  Continue -->
+  
   
 </body>
 </html>
